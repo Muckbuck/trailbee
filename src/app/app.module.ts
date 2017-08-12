@@ -30,7 +30,7 @@ networkInterface.use([{
       req.options.headers = {};  // Create the header object if needed.
     }
     // get the authentication token from local storage if it exists
-    req.options.headers.authorization = 'Bearer 12fcbf1a94aeba6a8d4cfd1ce771be46ade18366';
+    req.options.headers.authorization = 'Bearer **********';
     next();
   }
 }]);
