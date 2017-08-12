@@ -1,12 +1,13 @@
 # Trailbee test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
-
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To run this project:
 
+1.clone https://github.com/Muckbuck/trailbee.git
+2.go to src/app/settings.ts to change to a valid github token
+3.run dev server on port:4200 with the command "ng serve"
 
-## Further help
+## Structure
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The project has three branches: master, 1.0, 1.1.
