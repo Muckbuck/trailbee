@@ -15,14 +15,14 @@ export class AppComponent {
   issues: any;
   showHide: string = ' ';
   tempIssuesArray: object[] = [];
-
+  
   constructor(private _issuesService: IssuesService) {}
 
 
   extractIssues(issuesObject): void{
     for (let i=0; i < issuesObject.length; i++) {
         if(issuesObject[i].__typename == 'Issue'){
-          this.tempIssuesArray.push(issuesObject[i])
+          this.tempIssuesArray.push(issuesObject[i]);
         }
     }
   } 

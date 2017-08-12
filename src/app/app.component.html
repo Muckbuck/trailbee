@@ -26,10 +26,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 expand" (click)="toggleByID(line.id)">Expand</div>
+                    <div class="col-md-3 expand" (click)="toggleByID(line.id)">Toggle</div>
                 </div>
-                <div class="row ">
-                    <div *ngIf="showHide==line.id" class="content w3-animate-opacity">{{line.bodyText}}</div>
+                <div *ngIf="showHide==line.id" class="row content-row">
+                    <div class="content  w3-animate-opacity">
+                        <a href="{{line.author.url}}" target="_blank"><img src="{{line.author.avatarUrl}}" class="img-circle"></a>
+                        <div class="text-body">{{line.bodyText}}</div>
+                    </div>
                 </div>
 
             </div>

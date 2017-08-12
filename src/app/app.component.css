@@ -12,7 +12,7 @@
 
 .expand {
     background-color: #505050;
-    width: 20%;
+    width: 30%;
     color: #1CFEBA;
     text-align: center;
     font-weight: bold;
@@ -20,16 +20,34 @@
     padding: 2%;
 }
 
-.content {
+.text-body {
     background-color: #484848;
-    border: 0.5px solid #585858;
     padding: 1%;
     word-wrap: break-word;
+    width: 85%;
+    float: right;
+}
+
+.content {
+    margin-top: 2%;
+}
+
+.img-circle {
+    float: left;
+}
+
+.content-row {
+    margin-top: 5%;
+    border-top: 1px solid #525252;
 }
 
 .main-row {
     padding-left: 10%;
     height: 100%;
+}
+
+img {
+    width: 10%;
 }
 
 .issues {
