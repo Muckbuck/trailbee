@@ -1,9 +1,8 @@
 .col-s-3 {
     background-color: #3C3C3C;
     color: #F5F5F5;
-    padding: 5%;
+    padding: 3%;
     margin-top: 2%;
-    box-shadow: 0.5px 0.5px 5px #888888;
 }
 
 .glyphicon-plus {
@@ -28,30 +27,21 @@
     float: right;
 }
 
-.content {
-    margin-top: 2%;
-}
-
-.img-circle {
-    float: left;
-}
-
-.content-row {
-    margin-top: 5%;
-    border-top: 1px solid #525252;
-}
-
 .main-row {
     padding-left: 10%;
     height: 100%;
 }
 
-img {
-    width: 10%;
+.issues {
+    width: 80%;
 }
 
-.issues {
-    width: 30%;
+.col-md-5 {
+    float: right;
+}
+
+img {
+    width: 50%;
 }
 
 .url a:hover {

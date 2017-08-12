@@ -5,36 +5,32 @@
         </h2>
         <div class="issues">
             <div class="col-s-3 issue" *ngFor="let line of tempIssuesArray">
-
-                <div class="row ">
-                    <div class="title ">
-                        <h3>{{line.title}}</h3>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="url ">
-                        <p>
-                            <a href="{{line.url}} " target="_blank">{{line.url}}</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="createdAt ">
-                        <p>
-                            {{line.createdAt}}
-                        </p>
-                    </div>
-                </div>
                 <div class="row">
-                    <div class="col-md-3 expand" (click)="toggleByID(line.id)">Toggle</div>
-                </div>
-                <div *ngIf="showHide==line.id" class="row content-row">
-                    <div class="content  w3-animate-opacity">
-                        <a href="{{line.author.url}}" target="_blank"><img src="{{line.author.avatarUrl}}" class="img-circle"></a>
-                        <div class="text-body">{{line.bodyText}}</div>
+                    <div class="col-md-3">
+                        <a href="{{line.author.url}}" target="_blank"><img src="{{line.author.avatarUrl}}"></a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row ">
+                            <div class="title ">
+                                <h3>{{line.title}}</h3>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="url ">
+                                <p>
+                                    {{line.bodyText}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="createdAt ">
+                                <p>
+                                    {{line.createdAt}}
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
 
         </div>
