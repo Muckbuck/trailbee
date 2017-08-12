@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ApolloClient, createNetworkInterface } from 'apollo-client';
 import { ApolloModule } from 'apollo-angular';
 import { IntrospectionFragmentMatcher } from 'apollo-client';
+import { token } from './settings';
 
 const networkInterface = createNetworkInterface('https://api.github.com/graphql');
 
@@ -30,7 +31,7 @@ networkInterface.use([{
       req.options.headers = {};  // Create the header object if needed.
     }
     // get the authentication token from local storage if it exists
-    req.options.headers.authorization = 'Bearer **********';
+    req.options.headers.authorization = `Bearer ${token}`;
     next();
   }
 }]);
