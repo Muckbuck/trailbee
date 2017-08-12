@@ -1,7 +1,5 @@
 # Trailbee test
 
-## Development server
-
 **To run this project**
 
 * clone https://github.com/Muckbuck/trailbee.git
