@@ -1,3 +1,39 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <div class="row main-row">
+        <h2>
+            {{title}}
+        </h2>
+        <div class="issues">
+            <div class="col-s-3 issue" *ngFor="let line of tempIssuesArray">
+
+                <div class="row ">
+                    <div class="title ">
+                        <h3>{{line.title}}</h3>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="url ">
+                        <p>
+                            <a href="{{line.url}} " target="_blank">{{line.url}}</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="createdAt ">
+                        <p>
+                            {{line.createdAt}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 expand" (click)="toggleByID(line.id)">Expand</div>
+                </div>
+                <div class="row ">
+                    <div *ngIf="showHide==line.id" class="content w3-animate-opacity">{{line.bodyText}}</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

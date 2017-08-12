@@ -1,0 +1,54 @@
+.col-s-3 {
+    background-color: #3C3C3C;
+    color: #F5F5F5;
+    padding: 5%;
+    margin-top: 2%;
+    box-shadow: 0.5px 0.5px 5px #888888;
+}
+
+.glyphicon-plus {
+    color: #1CFEBA;
+}
+
+.expand {
+    background-color: #505050;
+    width: 20%;
+    color: #1CFEBA;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2%;
+}
+
+.content {
+    background-color: #484848;
+    border: 0.5px solid #585858;
+    padding: 1%;
+    word-wrap: break-word;
+}
+
+.main-row {
+    padding-left: 10%;
+    height: 100%;
+}
+
+.issues {
+    width: 30%;
+}
+
+.url a:hover {
+    text-decoration: none;
+    color: none;
+}
+
+.createdAt {
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+}
+
+.issue {
+    width: 100%;
+}
