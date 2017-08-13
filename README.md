@@ -9,7 +9,8 @@
     'use strict';
     export const token: string = 'YOUR-BEARER-TOKEN'
 * run npm install
-* run dev server on port:4200 with the command "ng serve"
+* install angular-cli if needed
+* run ng serve to start the server at localhost:4200
 
 **Branches**
 
